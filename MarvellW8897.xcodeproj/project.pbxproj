@@ -1,0 +1,541 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		93D000012F430001005311BC /* MarvellW8897Controller.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 93D000112F430001005311BC /* MarvellW8897Controller.cpp */; };
+		93D000022F430001005311BC /* MarvellW8897UserClient.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 93D000132F430001005311BC /* MarvellW8897UserClient.cpp */; };
+		93D000032F430001005311BC /* MarvellW8897KextMain.c in Sources */ = {isa = PBXBuildFile; fileRef = 93D000142F430001005311BC /* MarvellW8897KextMain.c */; };
+		93D000042F430001005311BC /* MarvellW8897PciBars.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 93D000162F430001005311BC /* MarvellW8897PciBars.cpp */; };
+		93D000052F430001005311BC /* MarvellW8897Transport.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 93D000182F430001005311BC /* MarvellW8897Transport.cpp */; };
+		93D000062F430001005311BC /* MarvellW8897Debug.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 93D0001A2F430001005311BC /* MarvellW8897Debug.cpp */; };
+		93D0001D2F430001005311BC /* MarvellW8897Bringup.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 93D0001E2F430001005311BC /* MarvellW8897Bringup.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		93930E1A2F42AEAE004CD044 /* MarvellW8897Kext.kext */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MarvellW8897Kext.kext; sourceTree = BUILT_PRODUCTS_DIR; };
+		93C9196B2EC93E7000A1B1E9 /* MarvellW8897.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MarvellW8897.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		93D000112F430001005311BC /* MarvellW8897Controller.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = MarvellW8897Controller.cpp; sourceTree = "<group>"; };
+		93D000122F430001005311BC /* MarvellW8897Controller.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = MarvellW8897Controller.hpp; sourceTree = "<group>"; };
+		93D000132F430001005311BC /* MarvellW8897UserClient.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = MarvellW8897UserClient.cpp; sourceTree = "<group>"; };
+		93D000142F430001005311BC /* MarvellW8897KextMain.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = MarvellW8897KextMain.c; sourceTree = "<group>"; };
+		93D000152F430001005311BC /* MarvellW8897UserClient.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = MarvellW8897UserClient.hpp; sourceTree = "<group>"; };
+		93D000162F430001005311BC /* MarvellW8897PciBars.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = MarvellW8897PciBars.cpp; sourceTree = "<group>"; };
+		93D000172F430001005311BC /* MarvellW8897PciBars.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = MarvellW8897PciBars.hpp; sourceTree = "<group>"; };
+		93D000182F430001005311BC /* MarvellW8897Transport.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = MarvellW8897Transport.cpp; sourceTree = "<group>"; };
+		93D000192F430001005311BC /* MarvellW8897Transport.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = MarvellW8897Transport.hpp; sourceTree = "<group>"; };
+		93D0001A2F430001005311BC /* MarvellW8897Debug.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = MarvellW8897Debug.cpp; sourceTree = "<group>"; };
+		93D0001B2F430001005311BC /* MarvellW8897Debug.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = MarvellW8897Debug.hpp; sourceTree = "<group>"; };
+		93D0001C2F430001005311BC /* MarvellW8897Regs.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = MarvellW8897Regs.hpp; sourceTree = "<group>"; };
+		93D0001E2F430001005311BC /* MarvellW8897Bringup.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = MarvellW8897Bringup.cpp; sourceTree = "<group>"; };
+		93D0001F2F430001005311BC /* MarvellW8897Bringup.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = MarvellW8897Bringup.hpp; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup (additional) section */
+		93B102A92ECA7884005311BC /* Contents */ = {
+			isa = PBXGroup;
+			children = (
+				93D000102F430001005311BC /* MacOS */,
+			);
+			path = Contents;
+			sourceTree = "<group>";
+		};
+		93D000102F430001005311BC /* MacOS */ = {
+			isa = PBXGroup;
+			children = (
+				93D000112F430001005311BC /* MarvellW8897Controller.cpp */,
+				93D000122F430001005311BC /* MarvellW8897Controller.hpp */,
+				93D0001E2F430001005311BC /* MarvellW8897Bringup.cpp */,
+				93D0001F2F430001005311BC /* MarvellW8897Bringup.hpp */,
+				93D000132F430001005311BC /* MarvellW8897UserClient.cpp */,
+				93D000152F430001005311BC /* MarvellW8897UserClient.hpp */,
+				93D000162F430001005311BC /* MarvellW8897PciBars.cpp */,
+				93D000172F430001005311BC /* MarvellW8897PciBars.hpp */,
+				93D000182F430001005311BC /* MarvellW8897Transport.cpp */,
+				93D000192F430001005311BC /* MarvellW8897Transport.hpp */,
+				93D0001A2F430001005311BC /* MarvellW8897Debug.cpp */,
+				93D0001B2F430001005311BC /* MarvellW8897Debug.hpp */,
+				93D0001C2F430001005311BC /* MarvellW8897Regs.hpp */,
+				93D000142F430001005311BC /* MarvellW8897KextMain.c */,
+			);
+			path = MacOS;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup (additional) section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		93930E172F42AEAE004CD044 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		93C919682EC93E7000A1B1E9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		93C919622EC93E7000A1B1E9 = {
+			isa = PBXGroup;
+			children = (
+				93B102A92ECA7884005311BC /* Contents */,
+				93C9196C2EC93E7000A1B1E9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		93C9196C2EC93E7000A1B1E9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				93C9196B2EC93E7000A1B1E9 /* MarvellW8897.bundle */,
+				93930E1A2F42AEAE004CD044 /* MarvellW8897Kext.kext */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		93930E152F42AEAE004CD044 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		93930E192F42AEAE004CD044 /* MarvellW8897Kext */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 93930E222F42AEAE004CD044 /* Build configuration list for PBXNativeTarget "MarvellW8897Kext" */;
+			buildPhases = (
+				93930E152F42AEAE004CD044 /* Headers */,
+				93930E162F42AEAE004CD044 /* Sources */,
+				93930E172F42AEAE004CD044 /* Frameworks */,
+				93930E182F42AEAE004CD044 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MarvellW8897Kext;
+			packageProductDependencies = (
+			);
+			productName = MarvellW8897Kext;
+			productReference = 93930E1A2F42AEAE004CD044 /* MarvellW8897Kext.kext */;
+			productType = "com.apple.product-type.kernel-extension";
+		};
+		93C9196A2EC93E7000A1B1E9 /* MarvellW8897 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 93C9196F2EC93E7000A1B1E9 /* Build configuration list for PBXNativeTarget "MarvellW8897" */;
+			buildPhases = (
+				93C919672EC93E7000A1B1E9 /* Sources */,
+				93C919682EC93E7000A1B1E9 /* Frameworks */,
+				93C919692EC93E7000A1B1E9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MarvellW8897;
+			packageProductDependencies = (
+			);
+			productName = MarvellW8897;
+			productReference = 93C9196B2EC93E7000A1B1E9 /* MarvellW8897.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		93C919632EC93E7000A1B1E9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 2610;
+				TargetAttributes = {
+					93930E192F42AEAE004CD044 = {
+						CreatedOnToolsVersion = 26.1;
+					};
+					93C9196A2EC93E7000A1B1E9 = {
+						CreatedOnToolsVersion = 26.1;
+					};
+				};
+			};
+			buildConfigurationList = 93C919662EC93E7000A1B1E9 /* Build configuration list for PBXProject "MarvellW8897" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 93C919622EC93E7000A1B1E9;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 93C9196C2EC93E7000A1B1E9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				93C9196A2EC93E7000A1B1E9 /* MarvellW8897 */,
+				93930E192F42AEAE004CD044 /* MarvellW8897Kext */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		93930E182F42AEAE004CD044 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		93C919692EC93E7000A1B1E9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		93930E162F42AEAE004CD044 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				93D000012F430001005311BC /* MarvellW8897Controller.cpp in Sources */,
+				93D000022F430001005311BC /* MarvellW8897UserClient.cpp in Sources */,
+				93D000042F430001005311BC /* MarvellW8897PciBars.cpp in Sources */,
+				93D000052F430001005311BC /* MarvellW8897Transport.cpp in Sources */,
+				93D000062F430001005311BC /* MarvellW8897Debug.cpp in Sources */,
+				93D0001D2F430001005311BC /* MarvellW8897Bringup.cpp in Sources */,
+				93D000032F430001005311BC /* MarvellW8897KextMain.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		93C919672EC93E7000A1B1E9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		93930E1F2F42AEAE004CD044 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = x86_64;
+				EXCLUDED_ARCHS = "arm64 arm64e";
+				ONLY_ACTIVE_ARCH = YES;
+				CLANG_ENABLE_MODULES = NO;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = NO;
+				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_KEXT_VERSION = 1.0.0;
+				CURRENT_PROJECT_VERSION = 1.0.0;
+				DYLIB_CURRENT_VERSION = 1.0.0;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Contents/info.plist;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				KERNEL_EXTENSION_HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/MacKernelSDK/Headers";
+				KERNEL_FRAMEWORK_HEADERS = "$(PROJECT_DIR)/MacKernelSDK/Headers";
+				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)/MacKernelSDK/Library/x86_64";
+				MACOSX_DEPLOYMENT_TARGET = 15.7;
+				EXECUTABLE_NAME = "$(PRODUCT_NAME)";
+				MARKETING_VERSION = 1.0.0;
+				MODULE_NAME = "$(PRODUCT_BUNDLE_IDENTIFIER)";
+				MODULE_START = MarvellW8897_start;
+				MODULE_STOP = MarvellW8897_stop;
+				MODULE_VERSION = 1.0.0;
+				EXCLUDED_SOURCE_FILE_NAMES = MarvellW8897Kext.c;
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-DKERNEL",
+					"-DKERNEL_PRIVATE",
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					"$(inherited)",
+					"-DKERNEL",
+					"-DKERNEL_PRIVATE",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = brainworks.driver.MarvellW8897;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				RUN_CLANG_STATIC_ANALYZER = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				WRAPPER_EXTENSION = kext;
+			};
+			name = Debug;
+		};
+		93930E202F42AEAE004CD044 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = x86_64;
+				EXCLUDED_ARCHS = "arm64 arm64e";
+				ONLY_ACTIVE_ARCH = YES;
+				CLANG_ENABLE_MODULES = NO;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = NO;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_KEXT_VERSION = 1.0.0;
+				CURRENT_PROJECT_VERSION = 1.0.0;
+				DYLIB_CURRENT_VERSION = 1.0.0;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Contents/info.plist;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				KERNEL_EXTENSION_HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/MacKernelSDK/Headers";
+				KERNEL_FRAMEWORK_HEADERS = "$(PROJECT_DIR)/MacKernelSDK/Headers";
+				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)/MacKernelSDK/Library/x86_64";
+				MACOSX_DEPLOYMENT_TARGET = 15.7;
+				EXECUTABLE_NAME = "$(PRODUCT_NAME)";
+				MARKETING_VERSION = 1.0.0;
+				MODULE_NAME = "$(PRODUCT_BUNDLE_IDENTIFIER)";
+				MODULE_START = MarvellW8897_start;
+				MODULE_STOP = MarvellW8897_stop;
+				MODULE_VERSION = 1.0.0;
+				EXCLUDED_SOURCE_FILE_NAMES = MarvellW8897Kext.c;
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-DKERNEL",
+					"-DKERNEL_PRIVATE",
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					"$(inherited)",
+					"-DKERNEL",
+					"-DKERNEL_PRIVATE",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = brainworks.driver.MarvellW8897;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				RUN_CLANG_STATIC_ANALYZER = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				WRAPPER_EXTENSION = kext;
+			};
+			name = Release;
+		};
+		93C9196D2EC93E7000A1B1E9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = NO;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.7;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		93C9196E2EC93E7000A1B1E9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.7;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		93C919702EC93E7000A1B1E9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = NO;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = MarvellW8897Kext/Info.plist;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSPrincipalClass = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				KERNEL_EXTENSION_HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/MacKernelSDK/Headers";
+				KERNEL_FRAMEWORK_HEADERS = "$(PROJECT_DIR)/MacKernelSDK/Headers";
+				MARKETING_VERSION = 1.0.0;
+				OTHER_CFLAGS = (
+					"-DKERNEL",
+					"-DKERNEL_PRIVATE",
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					"-DKERNEL",
+					"-DKERNEL_PRIVATE",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = brainworks.MarvellW8897;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		93C919712EC93E7000A1B1E9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = NO;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = MarvellW8897Kext/Info.plist;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSPrincipalClass = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				KERNEL_EXTENSION_HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/MacKernelSDK/Headers";
+				KERNEL_FRAMEWORK_HEADERS = "$(PROJECT_DIR)/MacKernelSDK/Headers";
+				MARKETING_VERSION = 1.0.0;
+				OTHER_CFLAGS = (
+					"-DKERNEL",
+					"-DKERNEL_PRIVATE",
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					"-DKERNEL",
+					"-DKERNEL_PRIVATE",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = brainworks.MarvellW8897;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		93930E222F42AEAE004CD044 /* Build configuration list for PBXNativeTarget "MarvellW8897Kext" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				93930E1F2F42AEAE004CD044 /* Debug */,
+				93930E202F42AEAE004CD044 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		93C919662EC93E7000A1B1E9 /* Build configuration list for PBXProject "MarvellW8897" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				93C9196D2EC93E7000A1B1E9 /* Debug */,
+				93C9196E2EC93E7000A1B1E9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		93C9196F2EC93E7000A1B1E9 /* Build configuration list for PBXNativeTarget "MarvellW8897" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				93C919702EC93E7000A1B1E9 /* Debug */,
+				93C919712EC93E7000A1B1E9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 93C919632EC93E7000A1B1E9 /* Project object */;
+}

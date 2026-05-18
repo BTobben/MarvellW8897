@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <key>CFBundleIdentifier</key>
+  <string>brainworks.driver.MarvellW8897</string>
+  <key>CFBundleName</key>
+  <string>Marvell W8897 Controller</string>
+  <key>CFBundleExecutable</key>
+  <string>MarvellW8897Kext</string>
+  <key>CFBundleVersion</key>
+  <string>1.0.0</string>
+  <key>CFBundlePackageType</key>
+  <string>KEXT</string>
+  <key>CFBundleDevelopmentRegion</key>
+  <string>en</string>
+
+  <key>OSBundleCompatibleVersion</key>
+  <string>1.0.0</string>
+  <key>OSBundleRequired</key>
+  <string>Root</string>
+
+  <key>OSBundleLibraries</key>
+  <dict>
+    <key>com.apple.iokit.IOPCIFamily</key>
+    <string>2.5</string>
+    <key>com.apple.kpi.iokit</key>
+    <string>8.0.0</string>
+    <key>com.apple.kpi.libkern</key>
+    <string>8.0.0</string>
+    <key>com.apple.kpi.mach</key>
+    <string>8.0.0</string>
+  </dict>
+
+  <key>IOKitPersonalities</key>
+  <dict>
+    <key>MarvellW8897-PCIe</key>
+    <dict>
+      <key>CFBundleIdentifier</key>
+      <string>brainworks.driver.MarvellW8897</string>
+
+      <!-- Onze C++ class -->
+      <key>IOClass</key>
+      <string>MarvellW8897Controller</string>
+      
+      <key>IOUserClientClass</key>
+      <string>MarvellW8897UserClient</string>
+
+      <!-- We hangen aan een PCIe device -->
+      <key>IOProviderClass</key>
+      <string>IOPCIDevice</string>
+
+      <!-- Vendor: 0x11ab, Device: 0x2b38 → 0x2b3811ab -->
+      <key>IOPCIPrimaryMatch</key>
+      <string>0x2b3811ab</string>
+
+      <!-- Optioneel: alleen in IOPCIMatch werken, maar PrimaryMatch is genoeg -->
+      <key>IONameMatch</key>
+      <array>
+        <string>pci11ab,2b38</string>
+      </array>
+
+      <!-- Mag laag blijven voor ontwikkeling -->
+      <key>IOProbeScore</key>
+      <integer>5000</integer>
+    </dict>
+  </dict>
+</dict>
+</plist>

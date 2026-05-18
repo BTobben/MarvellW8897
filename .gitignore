@@ -1,0 +1,13 @@
+build.log
+build/
+out/
+DerivedData/
+*.xcuserstate
+*.xcbkptlist
+*.pbxuser
+*.perspectivev3
+*.mode1v3
+xcuserdata/
+.DS_Store
+local-test/marvell_probe
+buildsettings.debug.txt
